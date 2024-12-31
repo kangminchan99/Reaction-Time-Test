@@ -2,7 +2,9 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:reaction_rate/screen/leader_board_screen.dart';
+import 'package:reaction_rate/service/admob_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class MainScreen extends StatefulWidget {
@@ -20,6 +22,22 @@ class _MainScreenState extends State<MainScreen> {
   bool _isReady = false;
   final Random _random = Random();
   final List<int> _reactionTimes = []; // 반응 속도 기록
+  BannerAd? _bannerAd;
+
+  @override
+  void initState() {
+    super.initState();
+    _createBannerAd();
+  }
+
+  void _createBannerAd() {
+    _bannerAd = BannerAd(
+        size: AdSize.fullBanner,
+        adUnitId: AdmobService.bannerAdUnitId!,
+        listener: AdmobService.bannerAdListener,
+        request: const AdRequest())
+      ..load();
+  }
 
   void _startTest() {
     setState(() {
@@ -167,6 +185,16 @@ class _MainScreenState extends State<MainScreen> {
           ),
         ),
       ),
+      bottomNavigationBar: _bannerAd == null
+          ? Container(
+              height: 75,
+            )
+          : SizedBox(
+              height: 75,
+              child: AdWidget(
+                ad: _bannerAd!,
+              ),
+            ),
     );
   }
 }
