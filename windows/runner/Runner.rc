@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "reaction_rate" "\0"
+            VALUE "CompanyName", "com.minchan" "\0"
+            VALUE "FileDescription", "reactionRate" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "reaction_rate" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "reaction_rate.exe" "\0"
-            VALUE "ProductName", "reaction_rate" "\0"
+            VALUE "InternalName", "reactionRate" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2024 com.minchan. All rights reserved." "\0"
+            VALUE "OriginalFilename", "reactionRate.exe" "\0"
+            VALUE "ProductName", "reactionRate" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

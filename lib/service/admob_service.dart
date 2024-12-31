@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:reaction_rate/config/config.dart';
+import 'package:reactionRate/config/config.dart';
 
 class AdmobService {
   // 배너 광고

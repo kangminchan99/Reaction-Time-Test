@@ -5,18 +5,18 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "reaction_rate",
+      "name": "reactionRate",
       "request": "launch",
       "type": "dart"
     },
     {
-      "name": "reaction_rate (profile mode)",
+      "name": "reactionRate (profile mode)",
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile"
     },
     {
-      "name": "reaction_rate (release mode)",
+      "name": "reactionRate (release mode)",
       "request": "launch",
       "type": "dart",
       "flutterMode": "release"

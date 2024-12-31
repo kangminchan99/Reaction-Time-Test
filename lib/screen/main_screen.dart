@@ -3,8 +3,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:reaction_rate/screen/leader_board_screen.dart';
-import 'package:reaction_rate/service/admob_service.dart';
+import 'package:reactionRate/screen/leader_board_screen.dart';
+import 'package:reactionRate/service/admob_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class MainScreen extends StatefulWidget {

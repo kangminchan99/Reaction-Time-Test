@@ -1,4 +1,4 @@
-package com.example.reaction_rate
+package com.minchan.reactionRate
 
 import io.flutter.embedding.android.FlutterActivity
 
